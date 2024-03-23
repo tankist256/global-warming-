@@ -64,4 +64,4 @@ async def f(ctx):
     fact = random.choice(facts)
     await ctx.send(fact)
 
-bot.run('MTIyMDg3MDExODkzNDg0MzQ5Mg.GoAV1K.0dl-lJXZCm7zKXvxYahjlducobdt672aqvjYi0') 
+bot.run('token') 
