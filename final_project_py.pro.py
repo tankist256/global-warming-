@@ -4,12 +4,10 @@ import sqlite3
 import random
 
 intents = discord.Intents.default()
-
-# Создаем подключение к базе данных
+
 conn = sqlite3.connect('carbon_footprint.db')
 c = conn.cursor()
-
-# Создаем таблицу, если она еще не существует
+
 c.execute('''CREATE TABLE IF NOT EXISTS users
              (id INTEGER PRIMARY KEY, carbon_footprint REAL)''')
 
